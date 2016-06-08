@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Play Simon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px"
+             height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+        <g>
+            <path class="colors" id="green" fill="#009245" d="M249,32l0.667,126L158,249.666L36.059,250C36.059,250,30.5,46.5,249,32z"/>
+            <path class="colors" id="red" fill="#ED1C24" d="M463.465,249.795l-125.301-0.684l-90.149-93.72l1.004-123.363
+                C249.02,32.028,451.442,28.597,463.465,249.795z"/>
+            <path class="colors" id="yellow" fill="#FBB03B" d="M249.013,458l0.252-121.259l90.547-87.542l119.578,0.573C459.391,249.772,463.378,445.648,249.013,458z"/>
+            <path class="colors" id="blue" fill="#0071BC" d="M36.059,249.989l122.493-2.141l90.217,89.561l1.783,120.571C250.553,457.98,52.769,465.869,36.059,249.989z
+                "/>
+        </g>
+        <g>
+            <line fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="248.013" y1="32" x2="249" y2="158.5"/>
+            <line fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="36.059" y1="249.989" x2="158" y2="249.666"/>
+            
+            <line fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="341.333" y1="249.666" x2="463.465" y2="249.795"/>
+            <line fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="249.667" y1="341.333" x2="250.553" y2="457.98"/>
+        </g>
+        <g>
+            <circle fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="249" cy="245" r="213"/>
+        </g>
+        <g>
+            <circle fill="#BDBDBD" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="249.667" cy="249.666" r="91.667"/>
+        </g>
+        <g>
+            <rect x="179" y="230" fill="#4D4D4D" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="61" height="42"/>
+            <circle id="start" fill="#ED1C24" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="271.5" cy="250.5" r="12"/>
+            <circle id="strict" fill="#FBB03B" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="310.5" cy="250.5" r="12"/>
+            <rect x="262.938" y="270" fill="none" width="17.125" height="12"/>
+            <text transform="matrix(1 0 0 1 259 278.5195)" font-family="'Impact'" font-size="12">Start</text>
+            <rect x="297.219" y="270" fill="none" width="26.563" height="8.539"/>
+            <text transform="matrix(1 0 0 1 297.2188 278.5195)" font-family="'Impact'" font-size="12">Strict</text>
+
+            <rect x="187.5" y="242.5" fill="none" width="21.5" height="17"/>
+            <text id="count_digit_1" transform="matrix(1 0 0 1 189 258)" font-family="'Michroma'" font-size="20" fill="red"></text>
+            <rect x="209.5" y="242.5" fill="none" width="21.5" height="17"/>
+            <text id="count_digit_2" transform="matrix(1 0 0 1 213 258)" font-family="'Michroma'" font-size="20" fill="red"></text>
+
+        </g>
+        </svg>
+
+    <script src="app.js"></script> 
+    </body>
+</html>

@@ -1,4 +1,4 @@
-# simon_clone
+# simon-clone
 A simon says clone written in JavaScript
 
 Demo: chrislloyd.me/simon

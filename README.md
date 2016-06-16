@@ -1,5 +1,5 @@
 # simon-clone
-A simon says clone written in JavaScript
+A simon clone written in JavaScript
 
 Demo: chrislloyd.me/simon
 
